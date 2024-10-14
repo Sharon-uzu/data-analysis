@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+header{
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+}
+
+header nav{
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bars{
+  display: none;
+}
+header nav a{
+  color: #000;
+  text-decoration: none;
+}
+header nav h1{
+  font-size: 32px;
+}
+
+header nav ul{
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul a{
+  color: #000;
+  text-decoration: none;
+}
+header nav ul a li{
+  font-size: 16px;
+}
+
+header nav ul form{
+  width: 55%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul form input{
+  width: 95%;
+  height: 99%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header nav ul button{
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+header nav ul .btn{
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* hero section */
+.hero-section{
+  width: 100%;
+  height: 80vh;
+  background-image: url(Images/Opened\ Book\ on\ a\ pile\ of\ old\ books\ Generative\ AI\ _\ Premium\ AI-generated\ image.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section .dk{
+  position: absolute;
+  background-color: hsla(0, 0%, 0%,.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-section .hero-s{
+  width: 90%;
+  margin: auto;
+  z-index: 3;
+  position: relative;
+  height: 100%;
+}
+
+.hero-section .hero-s .hero{
+  width: 50%;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section .hero-s .hero h1{
+  font-size: 67px;
+  margin-bottom: 20px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+
+.hero-section .hero-s .hero p{
+  width: 90%;
+  font-size:23px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  letter-spacing: .2px;
+}
+
+.hero-section .hero-s .hero button{
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 25px;
+  border: none;
+}
+
+.hero-section .hero-s .hero .numbers{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+.hero-section .hero-s .hero .numbers h2{
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+
+.hero-section .hero-s .hero .numbers p{
+  font-size: 16px;
+}
+
+/* browse */
+.browse{
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.browse h3{
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.browse p{
+  color: #565656;
+  font-size: 20px;
+}
+
+.browse .cards{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.browse .cards .card{
+  width: 22%;
+  height: 40vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  background: url(Images/5690f055-1782-4e66-8959-af03d634ffc6.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+
+.browse .cards .card .dk{
+  position: absolute;
+  background-color: hsla(0, 0%, 0%,.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 10px;
+}
+.browse .cards .c2{
+  background-image: url(Images/8c6ae8dd-05cd-4347-baaa-e98db8676ff8.jpeg);
+}
+.browse .cards .c3{
+  background-image: url(Images/Download\ free\ image\ of\ Woman\ reading\ a\ blank\ notebook\ at\ home\ \ by\ Karolina\ _\ Kaboompics\ about\ reading\,\ cozy\,\ book\,\ autumn\ photos\,\ and\ cozy\ at\ home\ 2396420.jpeg);
+}
+.browse .cards .c4{
+  background-image: url(Images/Paint\ A\ Pile\ Of\ Background\ Materials\ For\ Reading\ Books\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
+}
+.browse .cards .card p{
+  z-index: 3;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Different */
+.different{
+  width: 100%;
+  padding: 50px 0;
+  background-color: hsla(0, 20%, 98%,.2);
+}
+
+.different .diff{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.different .diff .one{
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.different .diff .one h1{
+  font-size: 48px;
+}
+
+.different .diff .one h1 span{
+  color: #ccc;
+}
+
+.different .diff .two{
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.different .diff .two p{
+  font-size: 19px;
+}
+
+.different .diff .three{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.different .diff .three div{
+  width: 30%;
+  padding: 40px 0;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.different .diff .three div .t-i{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.different .diff .three div h6{
+  font-size: 20px;
+}
+
+
+/* courses overview */
+.courses-overview{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.courses-overview .text{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+
+.courses-overview .text h2{
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.courses-overview .text p{
+  font-size: 18px;
+}
+
+.courses-overview .course{
+  width: 24%;
+  margin-bottom: 40px;
+}
+
+.courses-overview .course img{
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.courses-overview .course .cont{
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+  margin-top: -45px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.courses-overview .course .cont div{
+  width: 93%;
+  margin: auto;
+}
+
+.courses-overview .course .cont p{
+  font-size: 16px;
+  color: #09c8f8;
+  margin-bottom: 12px;
+}
+
+.courses-overview .course .cont h3{
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.courses-overview .course .cont h6{
+  font-size: 17px;
+  color: #565656;
+  font-weight: 500;
+}
+
+.courses-overview .course .cont h6:hover{
+  color: #09c8f8;
+}
+
+
+/* course info */
+.course-info{
+  position: relative;
+  padding-bottom: 20px;
+}
+.course-info .top{
+  width: 100%;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.course-info .top .top-c{
+  width: 90%;
+  margin: auto;
+}
+
+.course-info .top .top-c .t-c{
+  width: 55%;
+  color: #fff;
+}
+
+.course-info .top .top-c .t-c h1{
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+.course-info .top .top-c .t-c p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.course-info .top .top-c .t-c h6{
+  font-size: 19px;
+  font-weight: 600;
+}
+.course-info .top .top-c .t-c h6 a{
+  color: #09c8f8;
+}
+
+.course-info .bottom{
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.course-info .bottom .b-cont{
+  width: 55%;
+  border: 1px solid #565656;
+  padding: 20px 0;
+}
+
+.course-info .bottom .b-cont .b-c{
+  width: 93%;
+  margin: auto;
+}
+
+.course-info .bottom .b-cont .b-c h3{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.course-info .bottom .b-cont .b-c div{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.course-info .abs-cart{
+  position: absolute;
+  width: 30%;
+  top: 50px;
+  right: 5%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.course-info .abs-cart img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.course-info .abs-cart div{
+  width: 93%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.course-info .abs-cart div h3{
+  font-size: 30px;
+  color: #09c8f8;
+  margin-bottom: 10px;
+}
+
+.course-info .abs-cart div button{
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+}
+
+.course-info .abs-cart div h4{
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.course-info .abs-cart div p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 1100px) {
+  header nav h1{
+    font-size: 28px;
+  }
+  header nav ul{
+    width: 75%;
+  }
+  header nav ul form{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+ 
+  header nav ul form{
+    width: 36%;
+  }
+  .browse .cards .card{
+    width: 47%;
+    margin-bottom: 20px;
+  }
+
+  .courses-overview .course{
+    width: 47%;
+  }
+  .course-info .top .top-c .t-c h1{
+    font-size: 26px;
+  }
+  .course-info .abs-cart{
+    width: 35%;
+  }
+  .course-info .abs-cart div h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  header nav ul{
+    position: absolute;
+    background-color: #09c8f8;
+    left: -100%;
+    width: 90%;
+    padding-left: 10%;
+    height: 85vh;
+    top: 10vh;
+    flex-direction: column;
+    z-index: 1000;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    padding-top: 5vh;
+  }
+  header nav .active{
+    left: 0;
+  }
+  header nav ul form{
+    width: 90%;
+  }
+  header .bars{
+    display: block;
+  }
+
+  .hero-section .hero-s .hero{
+    width: 65%;
+  }
+  .different .diff .one h1{
+    font-size: 40px;
+  }
+  .different .diff .two{
+    width: 50%;
+  }
+
+  .different .diff .three div{
+    width: 32%;
+  }
+  .different .diff .three div h6{
+    width: 95%;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .hero-section .hero-s .hero h1{
+    font-size: 60px;
+  }
+  .different .diff .one{
+    width: 40%;
+  }
+  .different .diff .one h1 {
+    font-size: 30px;
+  }
+
+  .different .diff .two{
+    width: 55%;
+  }
+  .course-info .abs-cart{
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .hero-section .hero-s .hero{
+    width: 100%;
+  }
+  .hero-section .hero-s .hero p{
+    width: 100%;
+  }
+  .hero-section .hero-s .hero h1{
+    font-size: 50px;
+  }
+  .hero-section .hero-s .hero .numbers h2{
+    font-size: 30px;
+  }
+  .different .diff .one{
+    width: 100%;
+  }
+
+  .different .diff .two{
+    width: 100%;
+  }
+  .course-info .abs-cart{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .course-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .course-info .top .top-c .t-c{
+    width: 100%;
+  }
+  .course-info .bottom .b-cont{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  header nav h1{
+    font-size: 22px;
+  }
+  .browse .cards .card{
+    width: 100%;
+  }
+  .courses-overview .course{
+    width: 100%;
+  }
+  .hero-section{
+    height: 65vh;
+  }
+  .different .diff .three{
+    flex-wrap: wrap;
+  }
+  .different .diff .three div{
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  .course-info .bottom .b-cont .b-c h3{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .hero-section .hero-s .hero h1{
+    line-height: unset;
+    font-size: 32px;
+  }
+  .hero-section .hero-s .hero .numbers h2{
+    font-size: 26px;
+  }
+
+  .browse h3{
+    font-size: 23px;
+  }
+  .different .diff .one h1{
+    font-size: 26px;
+  }
+
+  .course-info .top .top-c .t-c h1{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .different .diff .three div{
+    width: 100%;
+  }
+  .courses-overview .text h2{
+    font-size: 28px;
+  }
+  .courses-overview .course .cont h3{
+    font-size: 20px;
+  }
+}
