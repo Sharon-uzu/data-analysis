@@ -16,6 +16,10 @@ const Header = () => {
 
     }
 
+    const [category, setCategory] = useState(false)
+    function open(){
+        setCategory(!category)
+    }
 
 
   return (
@@ -29,11 +33,20 @@ const Header = () => {
                 </div>
 
                 <ul className={click ? 'active' : 'ul'}>
-                    <a href=""><li>Categories</li></a>
+                    <li className='categ' onClick={open}>Categories
+                    { category ?(
+                        <div>
+                            <p><Link to="/categories">Real Estate</Link></p>
+                            <p><Link to="/categories">Real Estate</Link></p>
+                            <p><Link to="/categories">Real Estate</Link></p>
+                            <p><Link to="/categories">Real Estate</Link></p>
+                        </div>):null
+                        }
+                        </li>
                     <form className='s-form'>
                         <input type="search" placeholder='Search' />
                     </form>
-                    <a href=""><li>Courses</li></a>
+                    <Link to="/dataset"><button>Download DataSet</button></Link>
                     <a href=""><button>Login</button></a>
                     <a href=""><button className='btn'>Sign up</button></a>
                 </ul>

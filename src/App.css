@@ -53,8 +53,32 @@ header nav ul a li{
   font-size: 16px;
 }
 
+header nav ul .categ{
+  position: relative;
+  cursor: pointer;
+}
+
+header nav ul .categ div{
+  position: absolute;
+  width: 150px;
+  left: 0;
+  top: 40px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+  left: 0;
+  z-index: 10;
+}
+
+header nav ul .categ div p{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
 header nav ul form{
-  width: 55%;
+  width: 50%;
   height: 40px;
   border-radius: 10px;
   border: 1px solid #000;
@@ -69,6 +93,7 @@ header nav ul form input{
   background-color: transparent;
   border: none;
   outline: none;
+  
 }
 
 header nav ul button{
@@ -76,11 +101,22 @@ header nav ul button{
   border: 1px solid #000;
   padding: 10px 15px;
   font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+header nav ul button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+header nav ul .btn:hover{
+  background-color: #fff;
+  color: #000;
 }
 header nav ul .btn{
   background-color: #000;
   color: #fff;
-  font-weight: 600;
+  
 }
 
 /* hero section */
@@ -156,11 +192,13 @@ header nav ul .btn{
 .hero-section .hero-s .hero .numbers h2{
   font-size: 40px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 
 .hero-section .hero-s .hero .numbers p{
   font-size: 16px;
+  text-align: center;
 }
 
 /* browse */
@@ -169,6 +207,9 @@ header nav ul .btn{
   margin: auto;
   padding: 60px 0;
   margin-top: 40px;
+}
+.browse a{
+  text-decoration: none;
 }
 
 .browse h3{
@@ -182,44 +223,46 @@ header nav ul .btn{
 }
 
 .browse .cards{
+  width: 100%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .browse .cards .card{
-  width: 22%;
+  width: 30%;
+  position: relative;
+}
+.browse .cards .card div{
+  width: 90%;
   height: 40vh;
   border-radius: 10px;
   display: flex;
   align-items: end;
   justify-content: center;
-  color: #fff;
-  position: relative;
   background: url(Images/5690f055-1782-4e66-8959-af03d634ffc6.jpeg);
   background-size: cover;
   background-position: center;
   text-decoration: none;
+  position: relative;
 }
 
-.browse .cards .card .dk{
+.browse .cards .card div .dks{
   position: absolute;
-  background-color: hsla(0, 0%, 0%,.6);
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 2;
 }
-.browse .cards .c2{
+.browse .cards .c2 div{
   background-image: url(Images/8c6ae8dd-05cd-4347-baaa-e98db8676ff8.jpeg);
 }
-.browse .cards .c3{
+.browse .cards .c3 div{
   background-image: url(Images/Download\ free\ image\ of\ Woman\ reading\ a\ blank\ notebook\ at\ home\ \ by\ Karolina\ _\ Kaboompics\ about\ reading\,\ cozy\,\ book\,\ autumn\ photos\,\ and\ cozy\ at\ home\ 2396420.jpeg);
 }
-.browse .cards .c4{
+.browse .cards .c4 div{
   background-image: url(Images/Paint\ A\ Pile\ Of\ Background\ Materials\ For\ Reading\ Books\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
 }
 .browse .cards .card p{
@@ -349,24 +392,32 @@ header nav ul .btn{
 }
 
 .courses-overview .course .cont p{
-  font-size: 16px;
+  font-size: 15px;
   color: #09c8f8;
   margin-bottom: 12px;
 }
 
 .courses-overview .course .cont h3{
-  font-size: 22px;
+  font-size: 17px;
   margin-bottom: 12px;
 }
-
-.courses-overview .course .cont h6{
-  font-size: 17px;
+.courses-overview .course .cont .update{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 16px;
   color: #565656;
-  font-weight: 500;
+  margin-bottom: 18px;
 }
-
-.courses-overview .course .cont h6:hover{
-  color: #09c8f8;
+.courses-overview .course .cont button{
+  background-color: #000;
+  color: #fff;
+  padding: 6px 13px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 
@@ -492,22 +543,229 @@ header nav ul .btn{
 }
 
 
+/* FAQ */
+
+.faqs{
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.faqs h1{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #000;
+}
+
+
+
+.faqs .w-r{
+  width: 95%;
+  margin: auto;
+  /* margin-top: 40px; */
+
+}
+
+.faqs .w-r .ques{
+  border: 1px solid #EFEFEF;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #272525;
+  border-radius: 7px;
+  /* align-items: center; */
+}
+.faqs .w-r .ques div{
+  margin-right: 20px;
+}
+
+.faqs .w-r .ques div .arr-icon{
+  cursor: pointer;
+  font-size: 20px;
+  color:#fff ;
+  font-weight: 800;
+  margin-top: 5px;
+}
+.faqs .w-r .ques div h4{
+  font-size: 19px;
+  font-weight: 500;
+}
+.faqs .w-r .ques div p{
+  text-align: start;
+  width: 100%;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+/* How it works */
+.h-w{
+  width: 100%;
+  background-color: #ccc;
+  padding: 50px 0;
+  margin-top: 60px;
+}
+
+.h-w .works{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h-w .works .h-one{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.h-w .works .h-one h2{
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.h-w .works .h-one p{
+  font-size: 16px;
+}
+
+.h-w .works .h-two{
+  width: 45%;
+}
+
+.h-w .works .h-two img{
+  width: 100%;
+}
+
+.h-w .works .h-three{
+  width: 45%;
+  background-color: transparent;
+}
+
+.h-w .works .h-three .crd{
+  background-color: #fff;
+  padding: 15px 0;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.h-w .works .h-three .crd .c-c{
+  width: 93%;
+  margin: auto;
+  display: flex;
+}
+
+.h-w .works .h-three .crd .c-c h1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+/* Footer */
+.footer{
+  width: 100%;
+  background-color: #000;
+  padding: 40px 0;
+}
+
+.footer footer{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer footer .foot1{
+  width: 30%;
+  
+}
+.footer footer .foot1 h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footer footer .foot1 p{
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.footer footer .foot1 .f-icons{
+  display: flex;
+}
+
+.footer footer .foot1 .f-icons a{
+  color: #fff;
+  font-size: 25px;
+  margin-right: 13px;
+}
+
+.footer footer .foot2{
+  width: 20%;
+  
+}
+
+.footer footer .foot2 h3{
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.footer footer .foot2 ul{
+  width: 87%;
+  margin: auto;
+}
+
+
+.footer footer .foot2 ul li{
+  font-size: 16px;
+  margin-bottom: 10px;
+} 
+
+.footer footer .foot2 ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer footer .foot2 ul li .ff-i{
+  margin-right: 8px;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1250px){
+  header nav ul form{
+    width: 40%;
+  }
+}
 @media screen and (max-width: 1100px) {
   header nav h1{
     font-size: 28px;
   }
   header nav ul{
-    width: 75%;
+    width: 78%;
   }
   header nav ul form{
-    width: 45%;
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 950px) {
  
   header nav ul form{
-    width: 36%;
+    width: 30%;
   }
   .browse .cards .card{
     width: 47%;
@@ -527,8 +785,7 @@ header nav ul .btn{
     font-size: 22px;
   }
 }
-
-@media screen and (max-width: 850px){
+@media screen and (max-width: 900px){
   header nav ul{
     position: absolute;
     background-color: #09c8f8;
@@ -553,6 +810,14 @@ header nav ul .btn{
   header .bars{
     display: block;
   }
+  .footer footer .foot1{
+    width: 27%;
+  }
+  .footer footer .cont{
+    width: 27%;
+  }
+}
+@media screen and (max-width: 850px){
 
   .hero-section .hero-s .hero{
     width: 65%;
@@ -572,6 +837,28 @@ header nav ul .btn{
     margin: auto;
     font-size: 18px;
     text-align: center;
+  }
+
+  .h-w .works .h-two{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .h-w .works .h-three{
+    width: 100%;
+  }
+
+  .footer footer{
+    flex-wrap: wrap;
+  }
+
+  .footer footer .foot1{
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .footer footer .foot2{
+    width: 48%;
+    margin-bottom: 20px;
   }
 }
 
@@ -658,6 +945,10 @@ header nav ul .btn{
   .course-info .bottom .b-cont .b-c h3{
     font-size: 22px;
   }
+
+  .h-w .works .h-one h2{
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 450px){
@@ -678,6 +969,13 @@ header nav ul .btn{
 
   .course-info .top .top-c .t-c h1{
     font-size: 22px;
+  }
+
+  .footer footer .foot1{
+    width: 100%;
+  }
+  .footer footer .foot2{
+    width: 100%;
   }
 }
 

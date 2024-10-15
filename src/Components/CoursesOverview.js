@@ -4,65 +4,154 @@ import m2 from '../Images/8c6ae8dd-05cd-4347-baaa-e98db8676ff8.jpeg'
 import m3 from '../Images/Free Photo _ Front view of hardback books in the library.jpeg'
 import m4 from '../Images/Download free image of Woman reading a blank notebook at home  by Karolina _ Kaboompics about reading, cozy, book, autumn photos, and cozy at home 2396420.jpeg'
 import { Link } from 'react-router-dom'
+import { HiCloudDownload } from "react-icons/hi";
 
 
 const CoursesOverview = () => {
+
+    const DataSet = [
+        {
+            id:1,
+            img:m1,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:2,
+            img:m2,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:3,
+            img:m3,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:4,
+            img:m4,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:5,
+            img:m2,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:6,
+            img:m4,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:7,
+            img:m1,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:8,
+            img:m3,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        
+        {
+            id:9,
+            img:m1,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:10,
+            img:m2,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:11,
+            img:m3,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        },
+        {
+            id:12,
+            img:m4,
+            brand:'Publishing Industry',
+            title:'The Data Science Course',
+            time:'2 months',
+            downloads:'20',
+            link:'/courseInfo'
+        }
+    ]
+
   return (
     <div>
-        <div className="courses-overview">
+        <div className="courses-overview" id='dataset'>
 
             <div className="text">
-                <h2>Popular Resources</h2>
+                <h2>Popular Data Set</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo hic soluta dolore, ut aspernatur magnam repudiandae omnis magni vitae mollitia consequuntur iste ratione, cumque impedit! Quod ipsam assumenda optio?</p>
             </div>
 
-            <div className="course">
-                <img src={m1} alt="" />
-                <div className='cont'>
-                    <div>
-                        <p>Publishing Industry</p>
-                        <h3>The Data Science Course</h3>
-                        <Link to='/courseInfo'><h6>Read more</h6></Link>
-                    </div>
-                    
-                </div>
-            </div>
+            {
+                DataSet.map((DataSet, id)=>{
+                    return(
+                        <div className="course" key={id} >
+                            <img src={DataSet.img} alt="" />
+                            <div className='cont'>
+                                <div>
+                                    <p>{DataSet.brand}</p>
+                                    <h3>{DataSet.title}</h3>
+                                    <div className='update'>
+                                        <span>updated {DataSet.time}</span>
+                                        <span><HiCloudDownload className='d-i'/>{DataSet.downloads}</span>
+                                    </div>
+                                    <Link to={DataSet.link}><button>Read more</button></Link>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    )
+                })
+            }
 
-            <div className="course">
-                <img src={m2} alt="" />
-                <div className='cont'>
-                    <div>
-                        <p>Publishing Industry</p>
-                        <h3>The Data Science Course</h3>
-                        <Link to='/courseInfo'><h6>Read more</h6></Link>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div className="course">
-                <img src={m3} alt="" />
-                <div className='cont'>
-                    <div>
-                        <p>Publishing Industry</p>
-                        <h3>The Data Science Course</h3>
-                        <Link to='/courseInfo'><h6>Read more</h6></Link>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div className="course">
-                <img src={m4} alt="" />
-                <div className='cont'>
-                    <div>
-                        <p>Publishing Industry</p>
-                        <h3>The Data Science Course</h3>
-                        <Link to='/courseInfo'><h6>Read more</h6></Link>
-                    </div>
-                    
-                </div>
-            </div>
 
         </div>
     </div>
